@@ -1,5 +1,5 @@
 /*
- *  Entry point to back-end (index.js)
+ *  Entry point to back-end (index.js
  */
 
 // Bring the dependencies
