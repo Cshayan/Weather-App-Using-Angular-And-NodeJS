@@ -1,0 +1,21 @@
+{
+  "name": "full_stack_weather_app",
+  "version": "1.0.0",
+  "description": "Weather App Made with Angular and NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Shayan Chatterjee",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
