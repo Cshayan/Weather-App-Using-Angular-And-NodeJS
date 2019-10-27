@@ -40,17 +40,21 @@ router.post('/', (req, res) => {
                         })
                     } else {
                         let weatherFromDarkSky = JSON.parse(body);
+
                         return res.json({
                             success: true,
                             msgFromDarkSkyAPI: weatherFromDarkSky,
-                            msgFromOpenWeather: weather
+                            msgFromOpenWeather: weather,
                         });
+
                     }
                 });
+
+
             } else {
                 return res.json({
                     success: false,
-                    err: 'Cannot get the weather details! Please try again later.'
+                    err: 'Cannot get the weather details! Maybe the city entered is wrong.'
                 })
             }
         }

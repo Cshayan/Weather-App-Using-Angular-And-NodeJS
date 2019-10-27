@@ -1,5 +1,5 @@
 /*
- *  Entry point to back-end (index.js
+ *  Entry point to back-end (index.js)
  */
 
 // Bring the dependencies
@@ -12,7 +12,7 @@ require('dotenv').config();
 const getWeatherRoutes = require('./routes/get_weather');
 
 // Init express
-const app = express();
+const app = express(); 
 
 // Body Parser Middleware
 app.use(bodyParser.json());
@@ -24,6 +24,7 @@ app.use(cors());
 app.use('/get-weather', getWeatherRoutes);
 
 // Listen to server
-app.listen(process.env.PORT, () => {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
     console.log('Server running on port ' + process.env.PORT);
 });
